@@ -20,10 +20,10 @@ public class ContaBancaria implements Serializable {
 	private String digitoAgencia;
 	private Integer numero;
 	private String digitoConta;
-	private String codigoCarteira;
+	private Integer codigoCarteira;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	public Long getCodigo() {
 		return codigo;
 	}
@@ -40,7 +40,7 @@ public class ContaBancaria implements Serializable {
 		this.agencia = agencia;
 	}
 
-	@Column(name="digito_agencia")
+	@Column(name = "digito_agencia")
 	public String getDigitoAgencia() {
 		return digitoAgencia;
 	}
@@ -57,7 +57,7 @@ public class ContaBancaria implements Serializable {
 		this.numero = numero;
 	}
 
-	@Column(name="digito_conta")
+	@Column(name = "digito_conta")
 	public String getDigitoConta() {
 		return digitoConta;
 	}
@@ -67,11 +67,11 @@ public class ContaBancaria implements Serializable {
 	}
 
 	@Column(name="codigo_carteira")
-	public String getCodigoCarteira() {
+	public Integer getCodigoCarteira() {
 		return codigoCarteira;
 	}
 
-	public void setCodigoCarteira(String codigoCarteira) {
+	public void setCodigoCarteira(Integer codigoCarteira) {
 		this.codigoCarteira = codigoCarteira;
 	}
 
