@@ -17,5 +17,9 @@ public class Cobrancas implements Serializable {
 	public Cobranca guardar(Cobranca cobranca) {
 		return this.manager.merge(cobranca);
 	}
+	
+	public Cobranca porCodigo(Long codigoCobranca) {
+		return this.manager.find(Cobranca.class, codigoCobranca);
+	}
 
 }

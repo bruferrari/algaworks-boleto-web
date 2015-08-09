@@ -8,6 +8,7 @@ import org.jrimum.texgit.Record;
 public class TransacaoTitulo {
 	
 	private Record registro;
+	public static final Integer LIQUIDACAO = 6;
 	
 	public enum MotivoConfirmaçãoDeProtesto {
 		DESPREZADO, ACEITO, DESCONHECIDO
